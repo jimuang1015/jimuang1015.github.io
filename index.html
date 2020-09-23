@@ -1,18 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
-    <script src="sketch.js"></script>
-    <div>Teachable Machine Image Model - p5.js and ml5.js</div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
-    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
-    <script type="text/javascript"></script>
-</head>
-<body>
+    <title>阿明的奇幻旅程</title>
+    <style type="text/css">
+   
+        .people {
+            position: fixed;
+            top: 400px;
+            left: 700px;
+            width: 0px;
+            height: 00px;
+        
+        }
+        
+        .first {
+            position: fixed;
+            top: 800px;
+            left: 0px;
+            width: 2000px;
+            height: 200px;
+            border: 1px solid #7606df;
+            background-color: #10d86a;
+            display: none;
+        }
+        
+        .dialog {
+            position: fixed;
+            top: 800px;
+            left: 0px;
+            width: 2000px;
+            height: 200px;
+            border: 1px solid #7606df;
+            background-color: #10d86a;
+          
+        }
+        
+        .dialog2 {
+            position: fixed;
+            top: 800px;
+            left: 0px;
+            width: 2000px;
+            height: 200px;
+            border: 1px solid #7606df;
+            background-color: #10d86a;
+            display: none;
+        }
+        
+        .dialog3 {
+            position: fixed;
+            top: 800px;
+            left: 0px;
+            width: 2000px;
+            height: 200px;
+            border: 1px solid #7606df;
+            background-color: #10d86a;
+            display: none;
+        }
+        
+        .button {
+            position: fixed;
+            top: 900px;
+            left: 1800px;
+            width: 1000px;
+            height: 100px;
+            display:none;
+        }
+        
+        .button2 {
+            position: fixed;
+            top: 900px;
+            left: 1800px;
+            width: 1000px;
+            height: 100px;
+            display: none;
+        }
+        
+        .next1 {
+            position: fixed;
+            top: 900px;
+            left: 1800px;
+            width: 1000px;
+            height: 100px;
+            display: none;
+        }
+        
+        .finish {
+            position: fixed;
+            top: 900px;
+            left: 1800px;
+            width: 1000px;
+            height: 100px;
+            display: none;
+        }
+        
+        .small {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+            
+        }
+        
+        .mapbutton {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+            display: none;
+        }
+        
+        .mapbutton2 {
+            position: fixed;
+            top: 500px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+            
+        }
+        
+    </style>
+    <script>
+        var dialog;
+        window.onload = function() {
+            dialog = document.getElementById("dialog2");
+        };
     
+
+        function showdialog() {
+            dialog2.style.display = "block";
+            finish.style.display = "block";
+        }
+
+        function showdialog2() {
+
+            dialog3.style.display = "block";
+            button2.style.display = "block";
+        }
+
+        function showback() {
+            dialog3.style.display = "none";
+            button2.style.display = "none";
+        }
+
+        function shownext1() {
+            dialog.style.display = "block";
+            button.style.display = "block";
+        }
+
+        function showmap() {
+            mapbutton.style.display = "none";
+            small.style.display = "block";
+            mapbutton2.style.display = "block";
+        }
+
+        function closemap() {
+            mapbutton.style.display = "block";
+            small.style.display = "none";
+            mapbutton2.style.display = "none";
+        }
+    </script>
+
+</head>
+
+<body>
+
+
+    <h1>
+
+        <p>
+            <img src="C:\Users\Administrator\Desktop\剪片檔案\風圖.jpg" width="1900px" height="840px"></img>
+        </p>
+    </h1>
+   
+       
+        <div class="people" id="people">
+            <p>
+                <img src="C:\Users\Administrator\Desktop\專研\專研照片\阿姨.png"></img>
+            </p>
+        </div>
+        <div class="small" id="small">
+            <p><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Q0oYVUTH7bA-0tVuvwuOSWTLYPjkCaQO" width="600px" height="480px"></iframe></p>
+        </div>
+        <div class="mapbutton" id="mapbutton">
+            <button onclick="showmap();">秀出地圖</button>
+        </div>
+        <div class="mapbutton2" id="mapbutton2">
+            <button onclick="closemap();">關閉地圖</button>
+        </div>
+        
+    
+
+
+
+
+
+        <div class="dialog" id="dialog">
+            <p>系羽隊長</p>
+
+            <ul>
+                <ol><button onclick="showdialog();">帥哥書樑</button></ol>
+                <ol><button onclick="showdialog2();">普通稔富</button></ol>
+                <ol><button onclick="showdialog2();">普通彥哥</button></ol>
+            </ul>
+        
+
+
+        <div id="dialog2" class="dialog2">
+                <p>他超帥的 真的 他最棒了</p>
+        </div>
+        <div class="finish" id="finish"><button><a href="text.html">完成</a></button></div>
+
+        <div id="dialog3" class="dialog3">
+                <p>低能是不是阿</p>
+        </div>
+        <div class="button2" id="button2"><button onclick="showback();">上一頁</button></div>
+        </div>
+
+
+     
+
+       
+    
+
+
+
+
+
+    <script src="scripts/main.js "></script>
 </body>
+
 </html>
