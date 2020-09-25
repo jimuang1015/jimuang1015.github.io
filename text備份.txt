@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>開頭</title>
+    <style type="text/css">
+        .start1 {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 0px;
+            height: 0px;
+        }
+        
+        .start2 {
+            position: fixed;
+            top: 200px;
+            left: 0px;
+            width: 0px;
+            height: 0px;
+        }
+        
+        .start3 {
+            position: fixed;
+            top: 400px;
+            left: 0px;
+            width: 0px;
+            height: 0px;
+        }
+        
+        .ckeck1 {
+            position: fixed;
+            top: 0px;
+            left: 200px;
+            width: 0px;
+            height: 0px;
+        }
+    </style>
+    <script>
+        var dialog;
+        window.onload = function() {
+            dialog = document.getElementById("dialog2");
+        };
+
+        function showcheck() {
+            start1.style.display = "none";
+            check1.style.display = "block";
+        }
+    </Script>
+</head>
+
+<body>
+    <div class="start1" id="start1"><button onclick="showcheck();" type="button" value="一餐" style="width:120px;height:200px"><a href="網頁遊戲.html">一餐</a></button></div>
+    <div class="start2" id="start2"><button type="button" value="圖書館" style="width:120px;height:200px"><a href="網頁遊戲2.html">圖書館</a></button></div>
+    <div class="start3" id="start3"><button type="button" value="體育館" style="width:120px;height:200px"><a href="網頁遊戲3.html">體育館</a></button></div>
+    <div claass="check1" id="check1">
+        <p><iframe src="https://pic.pimg.tw/az19by28sz/1560486784-1605000231.jpg" width="600px" height="480px"></iframe></p>
+    </div>
+</body>
