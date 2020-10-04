@@ -6,6 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>開頭</title>
     <style type="text/css">
+        .small {
+            position: fixed;
+            top: 100px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+            display: none;
+        }
+        
+        .mapbutton {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+        }
+        
+        .mapbutton2 {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+            display: none;
+        }
+        
+        .tsmall {
+            position: fixed;
+            top: 100px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+            display: none;
+        }
+        
+        .tmapbutton {
+            position: fixed;
+            top: 0px;
+            left: 381px;
+            width: 00px;
+            height: 00px;
+        }
+        
+        .tmapbutton2 {
+            position: fixed;
+            top: 0px;
+            left: 381px;
+            width: 00px;
+            height: 00px;
+            display: none;
+        }
+        
         .mapp {
             position: absolute;
             top: 0px;
@@ -16,24 +68,24 @@
         
         .start3 {
             position: absolute;
-            top: 420px;
-            left: 300px;
+            top: 350px;
+            left: 180px;
             width: 0px;
             height: 0px;
         }
         
         .ckeck1 {
             position: absolute;
-            top: 550px;
-            left: 200px;
+            top: 480px;
+            left: 120px;
             width: 0px;
             height: 0px;
         }
         
         .ckeck2 {
             position: absolute;
-            top: 300px;
-            left: 300px;
+            top: 280px;
+            left: 180px;
             width: 0px;
             height: 0px;
         }
@@ -41,9 +93,9 @@
         .good1 {
             position: absolute;
             top: 20px;
-            left: 500px;
+            left: 100px;
             width: 200px;
-            height: 100px;
+            height: 40px;
             border: orange;
             background: papayawhip;
         }
@@ -51,9 +103,9 @@
         .good2 {
             position: absolute;
             top: 50px;
-            left: 500px;
+            left: 100px;
             width: 200px;
-            height: 100px;
+            height: 40px;
             border: powderblue;
             background: blueviolet;
         }
@@ -63,13 +115,37 @@
         window.onload = function() {
             dialog = document.getElementById("dialog2");
         };
+
+        function showmap() {
+            mapbutton.style.display = "none";
+            small.style.display = "block";
+            mapbutton2.style.display = "block";
+        }
+
+        function closemap() {
+            mapbutton.style.display = "block";
+            small.style.display = "none";
+            mapbutton2.style.display = "none";
+        }
+
+        function tshowmap() {
+            tmapbutton.style.display = "none";
+            tsmall.style.display = "block";
+            tmapbutton2.style.display = "block";
+        }
+
+        function tclosemap() {
+            tmapbutton.style.display = "block";
+            tsmall.style.display = "none";
+            tmapbutton2.style.display = "none";
+        }
     </Script>
 </head>
 
 <body>
     <div calss="mapp">
         <p>
-            <img src="assets/桃園校園平面圖20170807-2_1.png" width="700px"></img>
+            <img src="assets/桃園校園平面圖20170807-2_1.png" width="411px" height="731px"></img>
         </p>
     </div>
 
@@ -79,15 +155,36 @@
     <div class="good2">
         銘傳略懂者
     </div>
-    <div class="ckeck1"><img src="assets/1560486784-1605000231.jpg" width="120px" height="120px"></img>
+    <div class="ckeck1"><img src="assets/1560486784-1605000231.jpg" width="50px" height="50px"></img>
     </div>
 
 
-    <div class="ckeck2"><img src="assets/1560486784-1605000231.jpg" width="120px" height="120px"></img>
+    <div class="ckeck2"><img src="assets/1560486784-1605000231.jpg" width="50px" height="50px"></img>
     </div>
 
 
 
 
-    <div class="start3" id="start3"><button onclick="showcheck();" type="button" value="體育館" style="width:100px;height:100px"><a href="網頁遊戲3.html"><img src="assets/訓練集 體育館_200906_0.jpg" width="120px" height="120px"></a></button></div>
+    <div class="start3" id="start3"><button onclick="showcheck();" type="button" value="體育館" style="width:50px;height:50px"><a href="網頁遊戲3.html"><img src="assets/訓練集 體育館_200906_0.jpg" width="50px" height="50px"></a></button></div>
+
+    <div class="small" id="small">
+        <p><iframe src="camera.html" width="360px" height="280px"></iframe></p>
+    </div>
+    <div class="mapbutton" id="mapbutton">
+        <button onclick="showmap();">機器學習輔助器</button>
+    </div>
+    <div class="mapbutton2" id="mapbutton2">
+        <button onclick="closemap();">關閉</button>
+    </div>
+
+    <div class="tsmall" id="tsmall">
+        <p><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Q0oYVUTH7bA-0tVuvwuOSWTLYPjkCaQO" width="400px" height="400px"></iframe></p>
+    </div>
+    <div class="tmapbutton" id="tmapbutton">
+        <button onclick="tshowmap();">秀出地圖</button>
+    </div>
+    <div class="tmapbutton2" id="tmapbutton2">
+        <button onclick="tclosemap();">關閉地圖</button>
+    </div>
+
 </body>
