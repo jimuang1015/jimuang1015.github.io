@@ -15,10 +15,10 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(400, 184);
+    createCanvas(152, 330);
     // Create the video
     video = createCapture(VIDEO);
-    video.size(400, 184);
+    video.size(152, 330);
     video.hide();
 
     flippedVideo = ml5.flipImage(video);
