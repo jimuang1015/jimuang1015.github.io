@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿明的奇幻旅程</title>
+    <style type="text/css">
+        .people {
+            position: fixed;
+            top: 300px;
+            left: 80px;
+            width: 0px;
+            height: 00px;
+        }
+        
+        .first {
+            position: fixed;
+            top: 800px;
+            left: 0px;
+            width: 411px;
+            height: 200px;
+            border: 1px solid #7606df;
+            background-color: #10d86a;
+            display: none;
+        }
+        
+        .dialog {
+            position: fixed;
+            top: 531px;
+            left: 0px;
+            width: 411px;
+            height: 200px;
+            border: 1px solid #7606df;
+            background-color: #10d86a;
+        }
+        
+        .dialog2 {
+            position: fixed;
+            top: 531px;
+            left: 0px;
+            width: 411px;
+            height: 200px;
+            border: 1px solid #7606df;
+            background-color: #10d86a;
+            display: none;
+        }
+        
+        .dialog3 {
+            position: fixed;
+            top: 531px;
+            left: 0px;
+            width: 411px;
+            height: 200px;
+            border: 1px solid #7606df;
+            background-color: #10d86a;
+            display: none;
+        }
+        
+        .edialog3 {
+            position: fixed;
+            top: 531px;
+            left: 0px;
+            width: 411px;
+            height: 200px;
+            border: 1px solid #7606df;
+            background-color: #10d86a;
+            display: none;
+        }
+        
+        .tdialog1 {
+            position: fixed;
+            top: 531px;
+            left: 0px;
+            width: 411px;
+            height: 200px;
+            border: 1px solid #7606df;
+            background-color: #10d86a;
+        }
+        
+        .tdialog2 {
+            position: fixed;
+            top: 531px;
+            left: 0px;
+            width: 411px;
+            height: 200px;
+            border: 1px solid #7606df;
+            background-color: #10d86a;
+        }
+        
+        .tdialog3 {
+            position: fixed;
+            top: 531px;
+            left: 0px;
+            width: 411px;
+            height: 200px;
+            border: 1px solid #7606df;
+            background-color: #10d86a;
+        }
+        
+        .tdialog4 {
+            position: fixed;
+            top: 531px;
+            left: 0px;
+            width: 411px;
+            height: 200px;
+            border: 1px solid #7606df;
+            background-color: #10d86a;
+            display: none;
+        }
+        
+        .button {
+            position: fixed;
+            top: 631px;
+            left: 311px;
+            width: 1000px;
+            height: 100px;
+            display: none;
+        }
+        
+        .button2 {
+            position: fixed;
+            top: 631px;
+            left: 311px;
+            width: 1000px;
+            height: 100px;
+            display: none;
+        }
+        
+        .ebutton2 {
+            position: fixed;
+            top: 631px;
+            left: 311px;
+            width: 1000px;
+            height: 100px;
+            display: none;
+        }
+        
+        .next1 {
+            position: fixed;
+            top: 631px;
+            left: 311px;
+            width: 1000px;
+            height: 100px;
+            display: none;
+        }
+        
+        .finish {
+            position: fixed;
+            top: 631px;
+            left: 311px;
+            width: 1000px;
+            height: 100px;
+            display: none;
+        }
+        
+        .tfinish1 {
+            position: fixed;
+            top: 631px;
+            left: 311px;
+            width: 1000px;
+            height: 100px;
+        }
+        
+        .tfinish2 {
+            position: fixed;
+            top: 631px;
+            left: 311px;
+            width: 1000px;
+            height: 100px;
+        }
+        
+        .tfinish3 {
+            position: fixed;
+            top: 631px;
+            left: 311px;
+            width: 1000px;
+            height: 100px;
+            display: none;
+        }
+        
+        .small {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+        }
+        
+        .mapbutton {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+            display: none;
+        }
+        
+        .mapbutton2 {
+            position: fixed;
+            top: 500px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+        }
+    </style>
+    <script>
+        var dialog;
+        window.onload = function() {
+            dialog = document.getElementById("dialog2");
+        };
+
+        function tnext() {
+
+            tdialog1.style.display = "none";
+            tfinish1.style.display = "none";
+
+        }
+
+        function tnext2() {
+
+            tdialog2.style.display = "none";
+            tfinish2.style.display = "none";
+
+        }
+
+        function tnext3() {
+            tdialog3.style.display = "none";
+            tdialog4.style.display = "none";
+            tfinish3.style.display = "none";
+
+        }
+
+
+
+        function showdialog() {
+            dialog2.style.display = "block";
+            finish.style.display = "block";
+        }
+
+        function showdialog2() {
+
+            dialog3.style.display = "block";
+            button2.style.display = "block";
+        }
+
+        function showback() {
+            dialog3.style.display = "none";
+            button2.style.display = "none";
+        }
+
+        function tshowback() {
+            edialog3.style.display = "none";
+            ebutton2.style.display = "none";
+        }
+
+        function shownext1() {
+            dialog.style.display = "block";
+            button.style.display = "block";
+        }
+
+        function showmap() {
+            mapbutton.style.display = "none";
+            small.style.display = "block";
+            mapbutton2.style.display = "block";
+        }
+
+        function closemap() {
+            mapbutton.style.display = "block";
+            small.style.display = "none";
+            mapbutton2.style.display = "none";
+        }
+
+        function tshowdialog() {
+            tdialog2.style.display = "block";
+            tfinish.style.display = "block";
+        }
+
+        function tshowdialog2() {
+            tdialog4.style.display = "block";
+            tfinish3.style.display = "block";
+        }
+
+        function eshowdialog2() {
+            edialog3.style.display = "block";
+            ebutton2.style.display = "block";
+        }
+    </script>
+
+</head>
+
+<body>
+
+
+    <h1>
+
+        <p>
+            <img src="assets/1362216709-1736285654_n.jpg" width="411px" height="731px"></img>
+        </p>
+    </h1>
+
+
+    <div class="people" id="people">
+        <p>
+            <img src="assets/ASAN1043T.jpg"></img>
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="dialog" id="dialog">
+        <p>系羽隊長</p>
+
+        <ul>
+            <ol><button onclick="showdialog();">帥哥書樑</button></ol>
+            <ol><button onclick="showdialog2();">普通稔富</button></ol>
+            <ol><button onclick="showdialog2();">普通彥哥</button></ol>
+        </ul>
+
+
+
+        <div id="dialog2" class="dialog2">
+            <p>恭喜你答對了</p>
+        </div>
+        <div class="finish" id="finish"><button><a href="text4.html">完成</a></button></div>
+
+        <div id="dialog3" class="dialog3">
+            <p>答錯了</p>
+        </div>
+        <div class="button2" id="button2"><button onclick="showback();">上一頁</button></div>
+    </div>
+
+
+    <div class="tdialog3" id="tdialog3">
+        <p>資傳系辦公室在資訊大樓幾樓?</p>
+
+        <ul>
+            <ol><button onclick="tshowdialog2();">5</button></ol>
+            <ol><button onclick="eshowdialog2();">4</button></ol>
+            <ol><button onclick="eshowdialog2();">3</button></ol>
+            <ol><button onclick="eshowdialog2();">2</button></ol>
+        </ul>
+
+
+
+        <div id="tdialog4" class="tdialog4">
+            <p>恭喜你答對了</p>
+        </div>
+        <div class="tfinish3" id="tfinish3"><button onclick="tnext3();">下一題</button></div>
+        <div id="edialog3" class="edialog3">
+            <p>答錯了</p>
+        </div>
+        <div class="ebutton2" id="ebutton2"><button onclick="tshowback();">上一頁</button></div>
+
+    </div>
+
+
+
+    <div id="tdialog2" class="tdialog2">
+        <p>我們系基本上甚麼都教，網頁設計、基本程式邏輯，還有好玩的maya跟遊戲設計unity等等...不要擔心，老師人都不錯，就放心地去聽課吧!</p>
+    </div>
+    <div class="tfinish2" id="tfinish2"><button onclick="tnext2();">下一個</button></div>
+
+    <div id="tdialog1" class="tdialog1">
+        <p>哈囉同學，這裡是銘傳大學的S棟，又稱資訊大樓，裡面有資工、資傳、資管、電子、電通等科系，五樓是各系的辦公室，有問題可以去那邊找到答案。我是資傳系的學生，正好可以給你介紹一下我們系</p>
+    </div>
+    <div class="tfinish1" id="tfinish1"><button onclick="tnext();">下一個</button></div>
+
+
+
+
+
+
+
+
+
+    <script src="scripts/main.js "></script>
+</body>
+
+</html>

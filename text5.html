@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>開頭</title>
+    <style type="text/css">
+        .small {
+            position: fixed;
+            top: 100px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+            display: none;
+        }
+        
+        .mapbutton {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+        }
+        
+        .mapbutton2 {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+            display: none;
+        }
+        
+        .tsmall {
+            position: fixed;
+            top: 100px;
+            left: 0px;
+            width: 00px;
+            height: 00px;
+            display: none;
+        }
+        
+        .tmapbutton {
+            position: fixed;
+            top: 0px;
+            left: 381px;
+            width: 00px;
+            height: 00px;
+        }
+        
+        .tmapbutton2 {
+            position: fixed;
+            top: 0px;
+            left: 381px;
+            width: 00px;
+            height: 00px;
+            display: none;
+        }
+        
+        .start6 {
+            position: absolute;
+            top: 360px;
+            left: 100px;
+            width: 0px;
+            height: 0px;
+        }
+        
+        .ckeck1 {
+            position: absolute;
+            top: 310px;
+            left: 90px;
+            width: 0px;
+            height: 0px;
+        }
+        
+        .ckeck2 {
+            position: absolute;
+            top: 210px;
+            left: 170px;
+            width: 0px;
+            height: 0px;
+        }
+        
+        .ckeck3 {
+            position: absolute;
+            top: 300px;
+            left: 180px;
+            width: 0px;
+            height: 0px;
+        }
+        
+        .ckeck4 {
+            position: absolute;
+            top: 270px;
+            left: 220px;
+            width: 0px;
+            height: 0px;
+        }
+        
+        .ckeck5 {
+            position: absolute;
+            top: 140px;
+            left: 200px;
+            width: 0px;
+            height: 0px;
+        }
+        
+        .good1 {
+            position: absolute;
+            top: 20px;
+            left: 100px;
+            width: 200px;
+            height: 40px;
+            border: orange;
+            background: papayawhip;
+        }
+        
+        .good2 {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            width: 200px;
+            height: 40px;
+            border: powderblue;
+            background: blueviolet;
+        }
+        
+        .good3 {
+            position: absolute;
+            top: 80px;
+            left: 100px;
+            width: 200px;
+            height: 40px;
+            border: powderblue;
+            background: cadetblue;
+        }
+        
+        .finalgame {
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            width: 300px;
+            height: 200px;
+            background: yellow;
+        }
+    </style>
+    <script>
+        var dialog;
+        window.onload = function() {
+            dialog = document.getElementById("dialog2");
+        };
+
+        function showmap() {
+            mapbutton.style.display = "none";
+            small.style.display = "block";
+            mapbutton2.style.display = "block";
+        }
+
+        function closemap() {
+            mapbutton.style.display = "block";
+            small.style.display = "none";
+            mapbutton2.style.display = "none";
+        }
+
+        function tshowmap() {
+            tmapbutton.style.display = "none";
+            tsmall.style.display = "block";
+            tmapbutton2.style.display = "block";
+        }
+
+        function tclosemap() {
+            tmapbutton.style.display = "block";
+            tsmall.style.display = "none";
+            tmapbutton2.style.display = "none";
+        }
+    </Script>
+</head>
+
+<body>
+    <div calss="mapp">
+        <p>
+            <img src="assets\map.png" width="411px" height="731px"></img>
+        </p>
+    </div>
+
+    <div class="good3">
+        銘傳大學通
+    </div>
+
+    <div class="ckeck1"><img src="assets/1560486784-1605000231.jpg" width="50px" height="50px"></img>
+    </div>
+
+
+    <div class="ckeck2"><img src="assets/1560486784-1605000231.jpg" width="50px" height="50px"></img>
+    </div>
+    <div class="ckeck3"><img src="assets/1560486784-1605000231.jpg" width="50px" height="50px"></img>
+    </div>
+    <div class="ckeck4"><img src="assets/1560486784-1605000231.jpg" width="50px" height="50px"></img>
+    </div>
+    <div class="ckeck5"><img src="assets/1560486784-1605000231.jpg" width="50px" height="50px"></img>
+    </div>
+
+    <div class="start6" id="start6"><button onclick="showcheck();" type="button" value="體育館" style="width:50px;height:50px"><a href="網頁遊戲6.html"><img src="assets\車站.jpg" width="50px" height="50px"></a></button></div>
+
+
+
+    <div class="small" id="small">
+        <p><iframe src="camera.html" width="360px" height="280px"></iframe></p>
+    </div>
+    <div class="mapbutton" id="mapbutton">
+        <button onclick="showmap();">機器學習輔助器</button>
+    </div>
+    <div class="mapbutton2" id="mapbutton2">
+        <button onclick="closemap();">關閉</button>
+    </div>
+
+    <div class="tsmall" id="tsmall">
+        <p><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Q0oYVUTH7bA-0tVuvwuOSWTLYPjkCaQO" width="400px" height="400px"></iframe></p>
+    </div>
+    <div class="tmapbutton" id="tmapbutton">
+        <button onclick="tshowmap();">秀出地圖</button>
+    </div>
+    <div class="tmapbutton2" id="tmapbutton2">
+        <button onclick="tclosemap();">關閉地圖</button>
+    </div>
+
+</body>
