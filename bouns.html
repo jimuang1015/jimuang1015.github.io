@@ -299,18 +299,25 @@
         
         .hello {
             position: fixed;
+            top: -20px;
+            left: 0px;
+            width: 411px;
+            height: 731px;
+            z-index: 9998;
+        }
+        
+        .hello1 {
+            position: fixed;
             top: 0px;
             left: 0px;
             width: 411px;
             height: 731px;
-            border: 1px solid #7606df;
-            background-color: #10d86a;
+    
             z-index: 9999;
         }
-        
         .hellox {
             position: fixed;
-            top: 695px;
+            top: 690px;
             left: 321px;
             width: 200px;
             height: 100px;
@@ -434,6 +441,7 @@
 
         function closehello() {
             hello.style.display = "none";
+            hello1.style.display = "none";
             hellox.style.display = "none";
         }
     </Script>
@@ -521,9 +529,13 @@
 
 
     <div id="hello" class="hello">
+        <p>
+            <img src="assets\under.jpg" width="411px" height="731px"></img>
+        </p>
+    </div>
 
+    <div id="hello1" class="hello1"> 
         <font size="7">校園還有其他好地方等你發現喔!快去找到他們成為真正的銘傳小達人吧!!</font>
-
     </div>
 
     <div class="hellox" id="hellox">
